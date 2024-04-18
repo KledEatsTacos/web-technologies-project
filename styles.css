@@ -79,9 +79,7 @@
     color: #ffffff;
     z-index: 1; /*Construction message hidden behind nav bar when it opens*/
 }
-.hidden {
-    display: none;
-}
+
 
 /*Footer styles*/
 .footer {
