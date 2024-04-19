@@ -1,16 +1,16 @@
 /*General styles*/
 .body_dash {
-    background-color: #38343c;
+    background-color: #313338;
 }
 
 /*Navbar styles*/
 .navbar {
-    background-color: #302c34 ;
+    background-color: #2b2d31;
     z-index: 2; /*Navbar on top of everything*/
 }
 
 .navbar-collapse {
-    background-color: #302c34 ;
+    background-color: #2b2d31;
 }
 
 .navbar-toggler-icon { /*Hamburger icon color to white*/
@@ -18,42 +18,43 @@
 }
 
 .navbar-toggler {
-    font-size: 1.5em; /*Hamburger menu bigger size*/
-    margin: 1em;
+    font-size: 1.2em; /*Hamburger menu bigger size*/
+    margin: 1em; 
 }
-
-.navbar .navbar-brand,
-.navbar .nav-link {
-    color: #ffffff ;
-}
-
 
 .navbar-brand {
     height: 30px;
 }
 
+.navbar .nav-link {
+    color: #80848e;
+}
+
+.navbar .dropdown-toggle,
+.navbar .nav-link[href='#'] {
+    color: #dbdee1;
+}
+
 .navbar .dropdown-menu {
-    background-color: #302c34; /* Adjust color as needed */
-    color: #ffffff; /* Adjust color as needed */
-    border-radius: 10px; /* Adjust border radius as needed */
+    background-color: #2b2d31;
 }
 
 .navbar .dropdown-item {
-    color: #ffffff ;
+    color: #dbdee1;
 }
 
 .navbar .dropdown-item:hover,
 .navbar .dropdown-item:focus {
-    background-color: #38343c ;
-    color: #ffffff ;
-    border-radius: 10px;
+    background-color: #35373c;
+    color: #dbdee1;
+    border-radius: 5px;
 }
 
 .navbar .nav-link:focus,
 .navbar .nav-link:hover {
-    color: #ffffff ;
-    background-color: #38343c ;
-    border-radius: 10px;
+    color: #dbdee1;
+    background-color: #35373c;
+    border-radius: 5px;
 }
 
 .navbar .nav-item .social-media {
@@ -70,9 +71,13 @@
     border-right: 1px solid #000 ; 
 }
 
+.nav-link.active {
+    color: #ffffff !important;
+    background-color: #404249;
+    border-radius: 5px;
+}
+
 /*Main styles*/
-
-
 
 /*Footer styles*/
 .footer {
@@ -84,7 +89,7 @@
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color: #38343c;
+    background-color: #313338;
 }
 
 .copyright p {
