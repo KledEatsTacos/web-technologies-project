@@ -1,4 +1,5 @@
 /*General styles*/
+
 .body_dash {
     background-color: #313338;
 }
@@ -28,26 +29,20 @@
 
 .navbar .nav-link {
     color: #80848e;
+    margin-right: 10px;
+    margin-left: 10px;
 }
 
-.navbar .dropdown-toggle,
+.navbar .nav-item {
+    border-right: 0.5px solid #3b3d43;
+}
+
+.navbar .nav-item:last-child {
+    border-right: none;
+}
+
 .navbar .nav-link[href='#'] {
     color: #dbdee1;
-}
-
-.navbar .dropdown-menu {
-    background-color: #2b2d31;
-}
-
-.navbar .dropdown-item {
-    color: #dbdee1;
-}
-
-.navbar .dropdown-item:hover,
-.navbar .dropdown-item:focus {
-    background-color: #35373c;
-    color: #dbdee1;
-    border-radius: 5px;
 }
 
 .navbar .nav-link:focus,
@@ -55,6 +50,16 @@
     color: #dbdee1;
     background-color: #35373c;
     border-radius: 5px;
+}
+
+a.nav-link[href="login.html"] {
+    color: #dbdee1;
+    background-color: #6064f4;
+    border-radius: 5px;
+}
+
+a.nav-link[href="login.html"]:hover {
+    background-color: #4854c4;
 }
 
 .navbar .nav-item .social-media {
@@ -92,12 +97,6 @@
     background-color: #313338;
 }
 
-.copyright p {
-    margin: 0;
-    color: #b3b3b3;
-    font-size: 0.6em;
-}
-
 /*Social media styles*/
 .social-media a {
     margin-left: 1em;
@@ -107,4 +106,9 @@
 .social-media img {
     width: 24px;
     height: 24px;
+    transition: opacity 0.2s ease;
+}
+
+.social-media a:hover img {
+    opacity: 0.7;
 }
