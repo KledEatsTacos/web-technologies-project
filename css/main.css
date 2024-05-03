@@ -1,5 +1,9 @@
 /*General styles*/
 
+html {
+    scroll-behavior: smooth;
+}
+
 .body_dash {
     background-color: #313338;
 }
@@ -84,13 +88,32 @@ a.nav-link[href="login.html"]:hover {
 
 /*Main styles*/
 
+/*Image box styles for images*/
+.imageBox {
+    border: 1px solid #1f2124;
+    padding: 10px;
+    background-color: #2b2d31;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.imageBox img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.imageBox p {
+    margin: 0;
+}
+
 /*Footer styles*/
 .footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1em;
-    position: fixed;
+    position: relative;
     left: 0;
     bottom: 0;
     width: 100%;
