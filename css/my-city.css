@@ -9,8 +9,8 @@ body {
     justify-content: space-between;
     align-items: start;
     margin-left: 12%;
-    margin-top: 9%;
-}
+    margin-top: 10%;
+}   
 
 #introduction .text-content {
     display: flex;
@@ -58,7 +58,7 @@ body {
     justify-content: flex-start;
     align-items: start;
     margin-left: 12%;
-    margin-top: 10%;
+    margin-top: 5%;
 }
 
 
@@ -80,29 +80,309 @@ body {
     font-size: 1.1em;
 }
 
-/*About city images*/
-
-#cityDetails {
+#aboutCityPictures {
     display: flex;
     justify-content: space-between;
-    margin: 2% auto;
-    max-width: 90%;
+    align-items: start;
+    padding: 0 200px;
 }
 
-#cityDetails .aboutCityPictures {
+#aboutCityPictures .aboutCityPictures {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-#cityDetails img {
+#aboutCityPictures img {
     width: 100%;
     max-width: 300px;
     height: auto;
 }
 
-#cityDetails p {
+#aboutCityPictures p {
     text-align: center;
-    margin-top: 10px;
     color: #d3d3d3;
+}
+
+/*Historical Jeddah*/
+
+#historicalJeddah {
+    display: flex;
+    justify-content: flex-start;
+    align-items: start;
+    margin-left: 12%;
+    margin-top: 5%;
+}
+
+
+#historicalJeddah .text-content-wide {
+    display: flex;
+    flex-direction: column;
+    max-width: 90%;
+}
+
+#historicalJeddah h2 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+#historicalJeddah p {
+    text-align: left;
+    line-height: 1.5;
+    font-size: 1.1em;
+}
+
+#historicalJeddahPictures {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    padding: 0 200px;
+}
+
+#historicalJeddahPictures .historicalJeddahPictures {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#historicalJeddahPictures img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+}
+
+#historicalJeddahPictures p {
+    text-align: center;
+    color: #d3d3d3;
+}
+
+/*Main sights*/
+
+#mainSights {
+    display: flex;
+    justify-content: flex-start;
+    align-items: start;
+    margin-left: 12%;
+    margin-top: 5%;
+}
+
+#mainSights .text-content-wide {
+    display: flex;
+    flex-direction: column;
+    max-width: 90%;
+}
+
+#mainSights h2 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+#mainSights p {
+    text-align: left;
+    line-height: 1.5;
+    font-size: 1.1em;
+}
+
+/*Open air art*/
+
+#openAirArt {
+    display: flex;
+    justify-content: flex-start;
+    align-items: start;
+    margin-left: 12%;
+    margin-top: 5%;
+}
+
+#openAirArt .text-content-wide {
+    display: flex;
+    flex-direction: column;
+    max-width: 90%;
+}
+
+#openAirArt h3 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+#openAirArt p {
+    text-align: left;
+    line-height: 1.5;
+    font-size: 1.1em;
+}
+
+#openAirArtPictures {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    padding: 0 200px;
+}
+
+#openAirArtPictures .openAirArtPictures {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#openAirArtPictures img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+}
+
+#openAirArtPictures p {
+    text-align: center;
+    color: #d3d3d3;
+}
+
+/*King Fahd Fountain*/
+
+#kingFahdFountain {
+    display: flex;
+    justify-content: flex-start;
+    align-items: start;
+    margin-left: 12%;
+    margin-top: 5%;
+}
+
+#kingFahdFountain .text-content-wide {
+    display: flex;
+    flex-direction: column;
+    max-width: 90%;
+}
+
+#kingFahdFountain h3 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+#kingFahdFountain p {
+    text-align: left;
+    line-height: 1.5;
+    font-size: 1.1em;
+}
+
+#kingFahdFountainPictures {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    padding: 0 200px;
+}
+
+#kingFahdFountainPictures .kingFahdFountainPictures {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#kingFahdFountainPictures img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+}
+
+#kingFahdFountainPictures p {
+    text-align: center;
+    color: #d3d3d3;
+}
+
+/*Flagpole*/
+
+#flagpole {
+    display: flex;
+    justify-content: flex-start;
+    align-items: start;
+    margin-left: 12%;
+    margin-top: 5%;
+}
+
+#flagpole .text-content-wide {
+    display: flex;
+    flex-direction: column;
+    max-width: 90%;
+}
+
+#flagpole h3 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+#flagpole p {
+    text-align: left;
+    line-height: 1.5;
+    font-size: 1.1em;
+}
+
+#flagpolePictures {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    padding: 0 200px;
+}
+
+#flagpolePictures .flagpolePictures {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#flagpolePictures img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+}
+
+#flagpolePictures p {
+    text-align: center;
+    color: #d3d3d3;
+}
+
+/*More*/
+
+#more {
+    display: flex;
+    justify-content: flex-start;
+    align-items: start;
+    margin-left: 12%;
+    margin-top: 5%;
+}
+
+#more .text-content-wide {
+    display: flex;
+    flex-direction: column;
+    max-width: 90%;
+}
+
+#more h3 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+#more p {
+    text-align: left;
+    line-height: 1.5;
+    font-size: 1.1em;
+}
+
+/*carousel*/
+
+.carousel-container {
+    display: flex;
+    justify-content: center;
+}
+
+.carousel-item {
+    height: 500px; /* Adjust this value to change the height of the carousel */
+    width: 700px; /* Adjust this value to change the width of the carousel */
+}
+
+.carousel-item img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
 }
