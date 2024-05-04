@@ -13,6 +13,7 @@
     <!--Stylesheets-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" />
     <link href="css/main.css" rel="stylesheet"> 
     <link href="css/my-city.css" rel="stylesheet">
 
@@ -82,6 +83,19 @@
 
 <!--Main-->
 <main>
+
+    <section id="country">
+        <div class="text-content">
+        <h2>Country</h2>
+        <p>Saudi Arabia, officially known as the Kingdom of Saudi Arabia, is the largest country in the Middle East. It is renowned for its vast deserts, including the Rub' Al Khali (the Empty Quarter) and the An Nafud desert. Saudi Arabia is also home to the two holiest cities in Islam, Mecca and Medina, making it a central hub for Muslim pilgrimages. The country's economy is heavily dependent on oil, possessing approximately 16% of the world's petroleum reserves. Saudi Arabia is known for its rich cultural heritage, with traditions in poetry, storytelling, and dance. In recent years, the country has been opening up more to tourism, showcasing its historic sites, beautiful coastlines, and modern cities like Riyadh and Jeddah.</p>      </div>
+      <div id="nationalAnthem" class="imageBox">
+        <video controls>
+            <source src="pictures/city-pictures/SaudiAnthem.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <p>Flag and national anthem</p>
+    </div>
+    </section>
 
     <section id="introduction">
         <div class="text-content">
@@ -219,81 +233,33 @@
     </div>
 </section>
 
-<section id="pictureCarousel">
-    <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
-        <!-- Indicators -->
-        <ol class="carousel-indicators">
-            <li data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"></li>
-            <li data-bs-target="#myCarousel" data-bs-slide-to="1"></li>
-            <li data-bs-target="#myCarousel" data-bs-slide-to="2"></li>
-            <li data-bs-target="#myCarousel" data-bs-slide-to="3"></li>
-            <li data-bs-target="#myCarousel" data-bs-slide-to="4"></li>
-            <li data-bs-target="#myCarousel" data-bs-slide-to="5"></li>
-            <li data-bs-target="#myCarousel" data-bs-slide-to="6"></li>
-        </ol>
-
-        <!-- Slides -->
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="pictures/city-pictures/JeddahMosque.jpg" class="d-block w-100" alt="Al-Rahmah Mosque">
-                <div class="carousel-caption d-none d-md-block">
-                    <h3>Al-Rahmah Mosque</h3>
-                    <p>Sometimes referred to as the floating mosque because of it being built above water.</p>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <img src="pictures/city-pictures/JeddahMeccaGate.jpg" class="d-block w-100" alt="Jeddah Mecca Gate">
-                <div class="carousel-caption d-none d-md-block">
-                    <h3>Jeddah Mecca Gate</h3>
-                    <p>Marks the border between Jeddah and Mecca.</p>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <img src="pictures/city-pictures/JeddahJawharaStadium.jpg" class="d-block w-100" alt="Al-Jawhara Stadium">
-                <div class="carousel-caption d-none d-md-block">
-                    <h3>Al-Jawhara Stadium</h3>
-                    <p>One of the largest stadiums in Saudi Arabia.</p>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <img src="pictures/city-pictures/JeddahFlood.jpg" class="d-block w-100" alt="Tunnel flood">
-                <div class="carousel-caption d-none d-md-block">
-                    <h3>Flooded tunnel in 2009</h3>
-                    <p>Heavy rain in Jeddah can cause flooding in the tunnels.</p>
-            </div>
-            <div class="carousel-item">
-                <img src="pictures/city-pictures/JeddahFlood2.jpg" class="d-block w-100" alt="Tunnel flood 2">
-                <div class="carousel-caption d-none d-md-block">
-                    <h3>Flooded tunnel in 2011</h3>
-                    <p>Another flooded tunnel because of heavy rain</p>
-                </div>
-                <div class="carousel-item">
-                    <img src="pictures/city-pictures/JeddahGlobeRoundabout.jpg" class="d-block w-100" alt="Globe roundabout">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h3>Globe Roundabout</h3>
-                        <p>The roundabout is a popular meeting point and a recognizable feature of Jeddah</p>
-                    </div>
-                    </div>
-                <div class="carousel-item">
-                    <img src="pictures/city-pictures/JeddahVerseBoat.jpg" class="d-block w-100" alt="Verse boat">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h3>Verse Boat</h3>
-                        <p>O my Lord! Let my entry be by the Gate of Truth and Honour, and likewise my exit by the Gate of Truth and Honour..</p>
-                    </div>
-                    </div>
-        </div>
-
-        <!-- Controls -->
-        <a class="carousel-control-prev" href="#myCarousel" role="button" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#myCarousel" role="button" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </a>
+<div class="container">
+    <div class="slider-wrapper">
+      <button id="prev-slide" class="slide-button material-symbols-rounded">
+        chevron_left
+      </button>
+      <ul class="image-list">
+        <img class="image-item" src="pictures/city-pictures/JeddahCamelRoundabout.jpg" alt="Camel roundabout" data-modal-target="#modal"/>
+        <img class="image-item" src="pictures/city-pictures/JeddahGlobeRoundabout.jpg" alt="Globe roundabout" data-modal-target="#modal"/>
+        <img class="image-item" src="pictures/city-pictures/JeddahVerseBoat.jpg" alt="Verse boat" data-modal-target="#modal"/>
+        <img class="image-item" src="pictures/city-pictures/JeddahFistRoundabout.jpg" alt="Fist Roundabout" data-modal-target="#modal" />
+        <img class="image-item" src="pictures/city-pictures/JeddahCars.jpg" alt="Cars in Concrete" data-modal-target="#modal"/>
+        <img class="image-item" src="pictures/city-pictures/JeddahMosque.jpg" alt="Al-Rahmah mosque" data-modal-target="#modal"/>
+        <img class="image-item" src="pictures/city-pictures/JeddahJawharaStadium.jpg" alt="The Jewel Stadium" data-modal-target="#modal"/>
+        <img class="image-item" src="pictures/city-pictures/JeddahMeccaGate.jpg" alt="Jeddah Mecca Gate" data-modal-target="#modal"/>
+        <img class="image-item" src="pictures/city-pictures/JeddahFish.jpg" alt="Fish Sculpture" data-modal-target="#modal"/>
+        <img class="image-item" src="pictures/city-pictures/JeddahRocket.jpg" alt="Rocket Roundabout" data-modal-target="#modal"/>
+      </ul>
+      <button id="next-slide" class="slide-button material-symbols-rounded">
+        chevron_right
+      </button>
     </div>
-</section>
+    <div class="slider-scrollbar">
+      <div class="scrollbar-track">
+        <div class="scrollbar-thumb"></div>
+      </div>
+    </div>
+  </div>
 </main>
 
     <!--Footer-->
@@ -311,6 +277,7 @@
 
     <!--Scripts-->
     <script src="js/main.js"></script>
+    <script src="js/my-city.js"></script>
 </body>
 
 </html>
