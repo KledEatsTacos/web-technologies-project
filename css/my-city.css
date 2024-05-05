@@ -6,15 +6,16 @@ body {
 
 #country {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: start;
     margin-left: 12%;
-    margin-top: 10%;
-}   
+    margin-top: 5%;
+}
 
-#country .text-content {
+#country .text-content-wide {
     display: flex;
     flex-direction: column;
+    max-width: 90%;
 }
 
 #country h2 {
@@ -25,29 +26,32 @@ body {
 
 #country p {
     text-align: left;
-    max-width: 80%;
     line-height: 1.5;
     font-size: 1.1em;
+    padding-right: 150px;
 }
 
-#nationalAnthem {
+#countryPictures {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    padding: 0 200px;
+}
+
+#countryPictures .countryPictures {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 4000px;
-    height: auto;
-    margin-right: 15%;
 }
 
-#nationalAnthem video {
+#countryPictures video {
     width: 100%;
+    max-width: 600px;
     height: auto;
 }
 
-#nationalAnthem p {
+#countryPictures p {
     text-align: center;
-    font-size: 0.9em;
-    margin-top: 10px;
     color: #d3d3d3;
 }
 
@@ -55,15 +59,16 @@ body {
 
 #introduction {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: start;
     margin-left: 12%;
-    margin-top: 10%;
-}   
+    margin-top: 5%;
+}
 
-#introduction .text-content {
+#introduction .text-content-wide {
     display: flex;
     flex-direction: column;
+    max-width: 90%;
 }
 
 #introduction h2 {
@@ -74,29 +79,32 @@ body {
 
 #introduction p {
     text-align: left;
-    max-width: 60%;
     line-height: 1.5;
     font-size: 1.1em;
+    padding-right: 150px;
 }
 
-#citySeal {
+#introductionPictures {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    padding: 0 200px;
+}
+
+#introductionPictures .introductionPictures {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 500px;
-    height: auto;
-    margin-right: 15%;
 }
 
-#citySeal img {
+#introductionPictures img {
     width: 100%;
+    max-width: 300px;
     height: auto;
 }
 
-#citySeal p {
+#introductionPictures p {
     text-align: center;
-    font-size: 0.9em;
-    margin-top: 10px;
     color: #d3d3d3;
 }
 
@@ -514,21 +522,62 @@ body {
     top: -10px;
     bottom: -10px;
   }
-  /* Styles for mobile and tablets */
-  @media only screen and (max-width: 1023px) {
+
+
+  /*Styles for mobile and tablets*/
+@media only screen and (max-width: 1023px) {
+
+    body {
+        font-size: 16px;
+    }
+
+    #countryPictures, #introductionPictures, #aboutCityPictures, #historicalJeddahPictures, #openAirArtPictures, #kingFahdFountainPictures,  #flagpolePictures {
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #country p, #introduction p{
+        padding-right: 80px;
+    }
+    
+    #mainSights {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+     #countryPictures video, #introductionPictures img, #aboutCityPictures img, #historicalJeddahPictures img, #openAirArtPictures img, #kingFahdFountainPictures img, #flagpolePictures img {
+        max-width: 100%;
+        height: auto;
+        max-height: 300px;
+        box-sizing: border-box;
+    }
+
+    #countryPictures p, #introductionPictures p, #aboutCityPictures p, #historicalJeddahPictures p, #openAirArtPictures p, #kingFahdFountainPictures p, #flagpolePictures p {
+        text-align: center;
+        color: #d3d3d3;
+        font-size: 14px;
+    }
+    
+
     .slider-wrapper .slide-button {
-      display: none !important;
+        display: none !important;
     }
     .slider-wrapper .image-list {
-      gap: 10px;
-      margin-bottom: 15px;
-      scroll-snap-type: x mandatory;
+        gap: 10px;
+        margin-bottom: 15px;
+        scroll-snap-type: x mandatory;
     }
     .slider-wrapper .image-list .image-item {
-      width: 280px;
-      height: 380px;
+        width: 280px;
+        height: 380px;
     }
     .slider-scrollbar .scrollbar-thumb {
-      width: 20%;
+        width: 20%;
     }
-  }
+    
+    
+}

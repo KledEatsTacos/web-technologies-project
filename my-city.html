@@ -17,10 +17,7 @@
     <link href="css/main.css" rel="stylesheet"> 
     <link href="css/my-city.css" rel="stylesheet">
 
-    <!--Scripts-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
+
 </head>
 
 <body class="body_dash">
@@ -61,19 +58,6 @@
                 <ul class="navbar-nav">
                
                     <li class="nav-item">
-                        <div class="social-media">
-                            <a href="https://www.github.com/kledeatstacos" target="_blank">
-                                <img src="icons/GitHubIcon.png" alt="GitHub">
-                            </a>
-                            <a href="https://www.instagram.com/kledeatstacos" target="_blank">
-                                <img src="icons/InstagramIcon.png" alt="Instagram">
-                            </a>
-                            <a href="https://www.youtube.com/@KledEatsTacos" target="_blank">
-                                <img src="icons/YoutubeIcon.png" alt="Youtube">
-                            </a>
-                        </div>
-                    </li>
-                    <li class="nav-item">
                         <a class="nav-link nav-link-bordered" href="login.html">Login</a>
                     </li>
                 </ul>
@@ -87,7 +71,11 @@
     <section id="country">
         <div class="text-content">
         <h2>Country</h2>
-        <p>Saudi Arabia, officially known as the Kingdom of Saudi Arabia, is the largest country in the Middle East. It is renowned for its vast deserts, including the Rub' Al Khali (the Empty Quarter) and the An Nafud desert. Saudi Arabia is also home to the two holiest cities in Islam, Mecca and Medina, making it a central hub for Muslim pilgrimages. The country's economy is heavily dependent on oil, possessing approximately 16% of the world's petroleum reserves. Saudi Arabia is known for its rich cultural heritage, with traditions in poetry, storytelling, and dance. In recent years, the country has been opening up more to tourism, showcasing its historic sites, beautiful coastlines, and modern cities like Riyadh and Jeddah.</p>      </div>
+        <p>Saudi Arabia, officially known as the Kingdom of Saudi Arabia, is the largest country in the Middle East. It is renowned for its vast deserts, including the Rub' Al Khali (the Empty Quarter) and the An Nafud desert. Saudi Arabia is also home to the two holiest cities in Islam, Mecca and Medina, making it a central hub for Muslim pilgrimages. The country's economy is heavily dependent on oil, possessing approximately 16% of the world's petroleum reserves. Saudi Arabia is known for its rich cultural heritage, with traditions in poetry, storytelling, and dance. In recent years, the country has been opening up more to tourism, showcasing its historic sites, beautiful coastlines, and modern cities like Riyadh and Jeddah.</p>  
+        </div>
+        </section>
+
+        <section id="countryPictures">
       <div id="nationalAnthem" class="imageBox">
         <video controls>
             <source src="pictures/city-pictures/SaudiAnthem.mp4" type="video/mp4">
@@ -102,6 +90,8 @@
         <h2>City</h2>
         <p>Jeddah, known as the 'Bride of the Red Sea', is a vibrant city on Saudi Arabia's coast. It offers a unique blend of historic districts and modern architecture. As the gateway for pilgrimages to Mecca and Medina, it's a city of cultural significance and diversity.</p>
       </div>
+      </section>
+      <section id="introductionPictures">
         <div id="citySeal" class ="imageBox">
             <img src="pictures/city-pictures/JeddahSeal.svg" alt="Jeddah Seal" data-modal-target="#modal">
             <p>Jeddah seal</p>
@@ -264,7 +254,17 @@
 
     <!--Footer-->
     <footer class="footer">
-
+        <div class="social-media">
+            <a href="https://www.github.com/kledeatstacos" target="_blank">
+                <img src="icons/GitHubIcon.png" alt="GitHub">
+            </a>
+            <a href="https://www.instagram.com/kledeatstacos" target="_blank">
+                <img src="icons/InstagramIcon.png" alt="Instagram">
+            </a>
+            <a href="https://www.youtube.com/@KledEatsTacos" target="_blank">
+                <img src="icons/YoutubeIcon.png" alt="Youtube">
+            </a>
+        </div>
     </footer>
 
     <!--Modal for full screen pictures-->
@@ -278,6 +278,9 @@
     <!--Scripts-->
     <script src="js/main.js"></script>
     <script src="js/my-city.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
