@@ -1,5 +1,8 @@
 /*Styles*/
 
+body {
+    overflow: hidden;
+}
 .login-background {
     background-image: url('path-to-your-background-image.jpg');
     background-size: cover;
@@ -50,7 +53,7 @@
     padding: 10px;
     border: none;
     border-radius: 3px;
-    background-color: #40444b;
+    background-color: #1e1f22;
     color: #ffffff;
 }
 
@@ -67,3 +70,18 @@
 .required {
     color: #e33e41;
   }
+
+  /*Responsive styles*/
+
+@media (max-width: 1023px) {
+    .login-container {
+        width: 60%; 
+        max-width: 400px;
+        padding: 20px; 
+    }
+
+    .back-button {
+        top: 20px; 
+        left: 20px; 
+    }
+}
