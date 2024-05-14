@@ -32,6 +32,11 @@ body {
     color: white;
     cursor: pointer;
     margin-top: 10px;
+    transition: background-color 0.2s ease;
+}
+
+#app button:hover {
+    background-color: #4854c4;
 }
 
 /* Responsive styles */

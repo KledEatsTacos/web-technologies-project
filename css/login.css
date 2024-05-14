@@ -11,7 +11,7 @@
     color: #dbdee1;
     font-size: 16px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.2s ease;
 }
 
 .back-button:hover {
@@ -19,7 +19,7 @@
 }
 
 .login-container {
-    font-family: 'gg-sans', sans-serif;
+    font-family: sans-serif;
     background-color: #313338;
     color: #f0f1f3;
     border-radius: 5px;
@@ -59,6 +59,9 @@
     background-color: #6064f4;
     color: white;
     cursor: pointer;
+}
+.login-container button:hover {
+    background-color: #4854c4;
 }
 
 .required {
