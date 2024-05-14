@@ -15,23 +15,15 @@ body {
     transform: translate(-50%, -50%);
 }
 
-#app label {
-    display: block;
-    margin-bottom: 5px;
+#app h1 {
     color: #b3b8bf;
 }
 
-#app input, #app textarea {
-    width: 100%;
-    padding: 10px;
-    border: none;
-    border-radius: 3px;
-    background-color: #1e1f22;
-    color: #ffffff;
-    margin-bottom: 10px;
+#app p {
+    color: #f0f1f3;
 }
 
-#app input[type="submit"], #app input[type="reset"] {
+#app button {
     width: 100%;
     padding: 10px;
     border: none;
