@@ -31,7 +31,7 @@ body {
     margin-bottom: 10px;
 }
 
-#app input[type="submit"], #app input[type="reset"] {
+#app input[type="button"], #app input[type="reset"] {
     width: 100%;
     padding: 10px;
     border: none;
@@ -43,7 +43,7 @@ body {
     transition: background-color 0.2s ease;
 }
 
-#app input[type="submit"]:hover, #app input[type="reset"]:hover {
+#app input[type="button"]:hover, #app input[type="reset"]:hover {
     background-color: #4854c4;
 }
 

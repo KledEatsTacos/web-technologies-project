@@ -14,13 +14,13 @@
             <button onclick="window.location.href='index.html'">Go to Home Page</button>
         </div>
     </div>
+
     <script>
-        var formData = JSON.parse(localStorage.getItem('formDataJS'));
-        if (formData) {
-            document.getElementById('name').textContent = formData.name;
-            document.getElementById('email').textContent = formData.email;
-            document.getElementById('message').textContent = formData.message;
-        }
+        var formData = JSON.parse(localStorage.getItem('formDataVueJS'));
+
+        document.getElementById('name').textContent = formData.name;
+        document.getElementById('email').textContent = formData.email;
+        document.getElementById('message').textContent = formData.message;
     </script>
 </body>
 </html>
