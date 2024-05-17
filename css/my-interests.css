@@ -2,9 +2,29 @@ body {
     color: white;
 }
 
-
 .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 15px;
+}
+
+#gamesList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+body #gamesList div {
+    flex-basis: calc(33% - 20px);
+    background-color: #333;
+    color: #fff;
+    margin-bottom: 20px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+}
+
+body #gamesList div:hover {
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
 }
