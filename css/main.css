@@ -73,15 +73,6 @@ a.nav-link[href="login.html"]:hover {
     background-color: #4854c4;
 }
 
-.navbar .nav-item .social-media {
-    display: flex;
-    align-items: center;
-}
-
-.navbar .nav-item .social-media a {
-    display: inline-block;
-    padding: .5rem;
-}
 
 .nav-link-bordered:not(:last-child) {
     border-right: 1px solid #000 ; 

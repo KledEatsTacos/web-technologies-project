@@ -37,8 +37,8 @@ body #gamesList div:hover {
     width: 300px;
     margin: 10px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    flex-basis: 25%; /* Add this line to make four items fit in a row */
-    box-sizing: border-box; /* Add this line to include padding and border in the element's total width and height */
+    flex-basis: 25%; 
+    box-sizing: border-box; 
 }
 
 .video-card img {
@@ -49,11 +49,11 @@ body #gamesList div:hover {
 .video-card a {
     display: block;
     padding: 10px;
-    color: white; /* Change this to white to make the video titles white */
+    color: white;
     text-decoration: none;
 }
 
-/* Add these styles to make the video cards wrap onto multiple lines and center them horizontally */
+
 
 #videoList {
     display: flex;
