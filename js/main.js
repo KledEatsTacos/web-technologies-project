@@ -1,5 +1,5 @@
 /*stuff for login/logout button*/
-window.onload = function() {
+window.addEventListener('load', function() {
     var isLoggedIn = localStorage.getItem('isLoggedIn');
     var navLink = document.getElementById('login-logout-link');
     if (isLoggedIn === 'true') {
@@ -10,9 +10,9 @@ window.onload = function() {
         navLink.href = 'login.html';
     }
     navLink.style.display = 'block';
-}
-/*stuff for clicking on images*/
+});
 
+/*stuff for clicking on images*/
 var modal = document.getElementById("modal");
 var modalImage = document.getElementById("modal-image");
 var closeButton = document.querySelector('.close-button');

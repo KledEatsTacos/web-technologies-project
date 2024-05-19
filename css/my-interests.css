@@ -55,7 +55,7 @@ body #gamesList div:hover {
 
 
 
-#videoList {
+#videos {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
