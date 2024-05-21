@@ -56,8 +56,8 @@ window.addEventListener('load', function() {
             });
         });
 
-    var apiKey = 'AIzaSyDcJ-2q9RvR5xRT3hGp2aed2b1jFq2YR4E';
-    var channelId = 'UC_x5XG1OV2P6uZZ5FSM9Ttw';
+    var apiKey = 'AIzaSyCQh3Nkw8pWSaAkZkQp-VrccpWPIcbq0fM';
+    var channelId = 'UC4_Xo34GmGYX_CRTA6eDhSA';
 
     fetch(`https://www.googleapis.com/youtube/v3/search?key=${apiKey}&channelId=${channelId}&part=snippet,id&order=date&maxResults=20`)
         .then(response => {
@@ -78,14 +78,16 @@ window.addEventListener('load', function() {
             }
 
             videoList.style.display = 'flex';
-            videoList.style.flexDirection = 'column';
-            videoList.style.alignItems = 'center';
+            videoList.style.flexWrap = 'wrap'; 
+            videoList.style.justifyContent = 'space-between';
 
             data.items.forEach(item => {
-                var videoContainer = document.createElement('div');
-                videoContainer.style.width = '300px';
-                videoContainer.style.margin = '10px';
-                videoContainer.style.boxShadow = '0 4px 8px 0 rgba(0, 0, 0, 0.2)';
+                if (item.id.kind === 'youtube#video') {
+                    var videoContainer = document.createElement('div');
+                    videoContainer.style.width = 'calc(33.33% - 20px)';
+                    videoContainer.style.margin = '10px';
+                    videoContainer.style.boxShadow = '0 4px 8px 0 rgba(0, 0, 0, 0.2)';
+                }            
 
                 var videoLink = document.createElement('a');
                 videoLink.href = `https://www.youtube.com/watch?v=${item.id.videoId}`;
