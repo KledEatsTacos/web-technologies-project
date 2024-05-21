@@ -56,6 +56,8 @@ window.addEventListener('load', function() {
             });
         });
 
+        //youtube
+
     var apiKey = 'AIzaSyCQh3Nkw8pWSaAkZkQp-VrccpWPIcbq0fM';
     var channelId = 'UC4_Xo34GmGYX_CRTA6eDhSA';
 
@@ -88,6 +90,20 @@ window.addEventListener('load', function() {
                     videoContainer.style.margin = '10px';
                     videoContainer.style.boxShadow = '0 4px 8px 0 rgba(0, 0, 0, 0.2)';
                 }            
+
+                if (window.innerWidth <= 600) {
+                    videoContainer.style.width = '100%';
+                } else {
+                    videoContainer.style.width = 'calc(33.33% - 20px)';
+                }
+        
+                window.addEventListener('resize', function() {
+                    if (window.innerWidth <= 600) {
+                        videoContainer.style.width = '100%';
+                    } else {
+                        videoContainer.style.width = 'calc(33.33% - 20px)';
+                    }
+                });
 
                 var videoLink = document.createElement('a');
                 videoLink.href = `https://www.youtube.com/watch?v=${item.id.videoId}`;

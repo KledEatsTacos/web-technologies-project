@@ -3,6 +3,16 @@ function submitWithJS() {
     var email = document.getElementById('email').value;
     var message = document.getElementById('message').value;
 
+    if (!name || !email || !message) {
+        alert('All fields are required.');
+        return;
+    }
+
+    if (!validateEmail(email)) {
+        alert('Please enter a valid email address.');
+        return;
+    }
+
     var formData = {
         name: name,
         email: email,
@@ -12,6 +22,11 @@ function submitWithJS() {
     localStorage.setItem('formDataJS', JSON.stringify(formData));
 
     window.location.href = 'form-data.html';
+}
+
+function validateEmail(email) {
+    var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    return re.test(String(email).toLowerCase());
 }
 
 new Vue({
